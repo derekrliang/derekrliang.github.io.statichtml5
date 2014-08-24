@@ -16,62 +16,52 @@ a {
   text-decoration: none;
 }
 
-img {
-  max-width: 100%;
+div {
+	display: block;
 }
 
-h3 {
-  margin: 0 0 1em 0;
+.center {
+	text-align: center;
 }
 
 
+.separate-div {
+	padding: 50px 0 50px 0;
+	
+	/* Colors */
+	background: #E4DFBA;
+}
 
 /**********************************
-HEADING
+HEADING & NAVI
 ***********************************/
 
 header {
   float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
+  margin: 0;
   width: 100%;
+  padding: 25px 0 20px 0;
+  
+  /* Colors */
+  background: #333;
+}
+
+#logo, nav {
+  display: inline-block;
+  text-align: center;
+  
+  /* Font Styling */
+  color: #FFF;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
 }
 
 #logo {
-  text-align: center;
-  margin: 0;
-}
-
-h1 {
-  font-family: 'Titillium Web', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height: 0.8em;
-}
-
-h2 {
-  font-size: 0.75em;
-  margin: -5px 0 0;
-  font-weight: normal;
-}
-
-
-
-/**********************************
-NAVIGATION
-***********************************/
-
-nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+	padding: 0 50px 0 0;
 }
 
 nav ul {
   list-style: none;
-  margin: 0 10px;
-  padding: 0;
 }
 
 nav li {
@@ -79,102 +69,133 @@ nav li {
 }
 
 nav a {
-  
   padding: 15px 10px;
 }
 
+/**********************************
+ARTICLE
+***********************************/
+
+article {
+	border-bottom: #dfdfdf 1px solid;
+}
+
+/**********************************
+TOP_HEADER
+***********************************/
+
+.div-header {
+	background: #CCC;
+	padding: 150px 0 80px 0;
+	
+	/* Text Styling */
+	font-size: 120px;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+}
+
+/*
+.div-header-img > img {
+	margin: 0px auto;
+	display: block;
+	border: 0px;
+	vertical-align: middle;
+	
+	max-width: 100%;
+*/
+}
+
+/**********************************
+1: MAJOR
+***********************************/
+
+article.#major {
+	background: #D6D5B4	
+}
+
+.div-overlap-img {
+	position: relative; 
+   	width: 100%; /* for IE 6 */
+}
+
+/* image match width of parent */
+.div-overlap-img > img {
+	max-width: 100%;
+	
+	/* Filters */
+	-webkit-filter: grayscale(1);
+}
+
+/* overlay text */
+h2 {
+   position: absolute;
+   top: 2%;
+   left: 0; 
+   width: 100%; 
+   
+   color: white; 
+   font: bold Helvetica, Sans-Serif; 
+   font-size: 24px; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 30px 0px 30px 30px;
+   line-height: 30px;
+   text-align: left;
+}
+
+h3 {
+   position: absolute; 
+   top: 260px; 
+   left: 0; 
+   width: 100%; 
+   
+   color: white; 
+   font: bold Helvetica, Sans-Serif; 
+   font-size: 24px;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+   text-align: left;
+}
 
 
+/**********************************
+CONTACT:
+***********************************/
+
+.contact-header {
+	padding: 0 0 30px 15px;	
+}
+
+#contact {
+	padding: 100px 0px 100px 0;
+	
+	color: black;
+	background: white;
+}
+
+.contact-email-img {
+	padding: 0 10px 0 0;
+	max-width: 50px;
+}
 /**********************************
 FOOTER
 ***********************************/
 
-footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-
+.left {
+	float: left;
+}
+.right {
+	float: right;
 }
 
-.social-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 10px;
-}
-
-
-
-/**********************************
-PAGE: PORTFOLIO
-***********************************/
-
-#gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#gallery li {
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
-}
-
-#gallery li a p {
-  margin: 0;
-  padding: 5%;
-  font-size: 0.75em;
-  color: #bdc3c7
-}
-
-
-
-/**********************************
-PAGE: ABOUT
-***********************************/
-
-.profile-photo {
-  display: block;
-  max-width: 150px;
-  margin: 0 auto 30px;
-  border-radius: 100%;
-}
-
-
-
-/**********************************
-PAGE: CONTACT
-***********************************/
-
-.contact-info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.9em;
-}
-
-.contact-info a {
-  display: block;
-  min-height: 20px;
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  padding: 0 0 0 30px;
-  margin: 0 0 10px;
-}
-
-.contact-info li.phone a {
-  background-image: url('../img/phone.png');
-}
-
-.contact-info li.mail a {
-  background-image: url('../img/mail.png');
-}
-
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+footer {	
+	padding: 40px 0 40px;
+	
+	background: #333;
+	color: white;
 }
 
 /**********************************
@@ -187,20 +208,8 @@ body {
   color: #000000;
 }
 
-/* Header */
-header {
-  background: #074871;
-  border-color: #053655;
-}
-
-/* Nav Background Mobile */
-nav {
-  background: #053655;
-}
-
-/* Logo Text */
-h1, h2 {
-  color: #ffffff;
+.img {
+	background: #999
 }
 
 /* Links */
