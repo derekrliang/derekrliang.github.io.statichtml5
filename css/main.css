@@ -77,7 +77,7 @@ ARTICLE
 ***********************************/
 
 article {
-	border-bottom: #dfdfdf 1px solid;
+	/* border-bottom: #dfdfdf 1px solid; */
 }
 
 /**********************************
@@ -129,7 +129,7 @@ article.#major {
 /* overlay text */
 h2 {
    position: absolute;
-   top: 2%;
+   top: 0%;
    left: 0; 
    width: 100%; 
    
@@ -141,24 +141,29 @@ h2 {
    background: rgba(0, 0, 0, 0.7);
    padding: 30px 0px 30px 30px;
    line-height: 30px;
-   text-align: left;
+   text-align: center;
 }
 
-h3 {
-   position: absolute; 
-   top: 260px; 
-   left: 0; 
-   width: 100%; 
-   
-   color: white; 
-   font: bold Helvetica, Sans-Serif; 
-   font-size: 24px;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
-   text-align: left;
+/**********************************
+PROJECTS:
+***********************************/
+article#projects {
+	padding: 100px 0 100px 0;
+	
+	background: #CCC;
 }
+
+div#projects-header {
+	font-size: 60px;
+	text-align: center;
+}
+
+#projects-info > div.col-md-12 {
+	padding: 0 0 100px 0;
+	
+	font-size: 	24px;
+}
+
 
 
 /**********************************
@@ -192,10 +197,19 @@ FOOTER
 }
 
 footer {	
-	padding: 40px 0 40px;
+	padding: 100px 0 800px;
 	
 	background: #333;
 	color: white;
+}
+
+span.glyphicon {
+    font-size: 3em;
+}
+
+/* Gly Color (from link) */
+#go-top {
+	color:#F90;
 }
 
 /**********************************
