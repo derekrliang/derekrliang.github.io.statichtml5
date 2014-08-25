@@ -1,0 +1,41 @@
+@media screen and (min-width: 480px) {
+
+
+/**********************************
+HEADING & NAVI
+***********************************/
+
+nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+nav a {
+	padding: 15px 10px;
+}
+
+
+/**********************************
+TOP_HEADER
+***********************************/
+
+.div-header {
+	padding: 150px 0 60px 0;
+	/* Text Styling */
+	font-size: 100px;
+}
+
+}
+
+@media screen and (min-width: 660px) {
+
+/**********************************
+TOP_HEADER
+***********************************/
+.div-header {
+	padding: 150px 0 80px 0;
+	/* Text Styling */
+	font-size: 140px;
+}
+  
+}
