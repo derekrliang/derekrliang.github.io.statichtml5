@@ -46,8 +46,8 @@ header {
   background: #333;
 }
 
-#logo, nav {
-  display: inline-block;
+nav {
+  display: block;
   text-align: center;
   
   /* Font Styling */
