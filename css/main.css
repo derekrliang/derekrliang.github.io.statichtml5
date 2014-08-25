@@ -32,6 +32,11 @@ div {
 	background: #E4DFBA;
 }
 
+h1 {
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 40px;	
+}
+
 /**********************************
 HEADING & NAVI
 ***********************************/
@@ -40,7 +45,6 @@ header {
   float: left;
   margin: 0;
   width: 100%;
-  padding: 25px 0 20px 0;
   
   /* Colors */
   background: #333;
@@ -49,6 +53,7 @@ header {
 nav {
   display: block;
   text-align: center;
+  margin: 0 0 0 -50px;
   
   /* Font Styling */
   color: #FFF;
@@ -91,7 +96,6 @@ TOP_HEADER
 	text-align: center;
 	
 	/* Screen Based */
-	padding: 150px 0 40px 0;
 	font-size: 60px;
 }
 
@@ -139,14 +143,11 @@ h2 {
 PROJECTS:
 ***********************************/
 article#projects {
-	padding: 100px 0 100px 0;
-	
 	background: #CCC;
 }
 
-div#projects-header {
-	font-size: 60px;
-	text-align: center;
+#projects-info > h1 {
+	text-align: left;
 }
 
 #projects-info > div.col-md-12 {
@@ -154,7 +155,6 @@ div#projects-header {
 	
 	font-size: 	24px;
 }
-
 
 
 /**********************************
@@ -188,7 +188,7 @@ FOOTER
 }
 
 footer {	
-	padding: 100px 0 800px;
+	padding: 70px 0 50px;
 	
 	background: #333;
 	color: white;

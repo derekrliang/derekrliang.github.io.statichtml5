@@ -1,9 +1,19 @@
 @media screen and (min-width: 480px) {
-
+	
+/**********************************
+GENERAL
+***********************************/
+h1 {
+	font-size: 60px;	
+}
 
 /**********************************
 HEADING & NAVI
 ***********************************/
+
+header {
+  padding: 25px 0 20px 0;
+}
 
 nav li {
   display: inline-block;
@@ -14,27 +24,39 @@ nav a {
 	padding: 15px 10px;
 }
 
+nav {
+	margin: 0;
+}
 
 /**********************************
 TOP_HEADER
 ***********************************/
 
 .div-header {
-	padding: 150px 0 60px 0;
-	/* Text Styling */
 	font-size: 100px;
+}
+
+/**********************************
+FOOTER
+***********************************/
+footer {	
+	padding: 100px 0 800px;
 }
 
 }
 
 @media screen and (min-width: 660px) {
+/**********************************
+GENERAL
+***********************************/
+h1 {
+	font-size: 80px;	
+}
 
 /**********************************
 TOP_HEADER
 ***********************************/
 .div-header {
-	padding: 150px 0 80px 0;
-	/* Text Styling */
 	font-size: 140px;
 }
   
