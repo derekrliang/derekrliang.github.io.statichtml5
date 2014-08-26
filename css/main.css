@@ -124,17 +124,17 @@ article.#major {
 /* overlay text */
 h2 {
    position: absolute;
-   top: 0%;
+   top: 0;
    left: 0; 
    width: 100%; 
    
    color: white; 
    font: bold Helvetica, Sans-Serif; 
-   font-size: 24px; 
+   font-size: 18px; 
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 30px 0px 30px 30px;
+   padding: 15px 0px 15px 15px;
    line-height: 30px;
    text-align: center;
 }
