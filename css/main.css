@@ -116,6 +116,7 @@ article.#major {
 /* image match width of parent */
 .div-overlap-img > img {
 	max-width: 100%;
+	background-size: 1920px 1080px;
 	
 	/* Filters */
 	-webkit-filter: grayscale(1);
