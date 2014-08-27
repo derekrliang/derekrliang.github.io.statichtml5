@@ -116,6 +116,8 @@ article.#major {
 /* image match width of parent */
 .div-overlap-img > img {
 	max-width: 100%;
+	display: block;
+	vertical-align: middle;
 	
 	/* Filters */
 	-webkit-filter: grayscale(1);
