@@ -118,9 +118,9 @@ article.#major {
 	max-width: 100%;
 	
 	/* Filters */
-	-webkit-min-device-pixel-ratio: 2;
 	-webkit-filter: grayscale(1);
 }
+
 
 /* overlay text */
 h2 {
