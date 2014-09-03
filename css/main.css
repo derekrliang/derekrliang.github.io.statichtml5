@@ -3,7 +3,7 @@ GENERAL
 ***********************************/
 
 body {
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 #wrapper {
@@ -32,9 +32,14 @@ div {
 	background: #E4DFBA;
 }
 
-h1 {
+h1, h2 {
 	font-family: 'Titillium Web', sans-serif;
-	font-size: 40px;	
+	font-weight: normal;
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 30px;
 }
 
 /**********************************
@@ -42,12 +47,11 @@ HEADING & NAVI
 ***********************************/
 
 header {
-  float: left;
   margin: 0;
   width: 100%;
   
   /* Colors */
-  background: #333;
+  background: black;
 }
 
 nav {
@@ -87,82 +91,135 @@ article {
 }
 
 /**********************************
-TOP_HEADER
-***********************************/
-
-.div-header {
-	background: #CCC;
-	font-family: 'Titillium Web', sans-serif;
-	text-align: center;
-	
-	/* Screen Based */
-	font-size: 60px;
-}
-
-
-/**********************************
 1: MAJOR
 ***********************************/
-
-article.#major {
-	background: #D6D5B4	
-}
-
-.div-overlap-img {
-	position: relative; 
-   	width: 100%; /* for IE 6 */
-}
-
-/* image match width of parent */
-.div-overlap-img > img {
-	max-width: 100%;
-	display: block;
-	vertical-align: middle;
+#maj-div-img-bg {
+	background-image: url(../img/school.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	
-	/* Filters */
-	-webkit-filter: grayscale(1);
+	-webkit-filter: grayscale(40%);
+	-moz-filter: grayscale(40%);
+	filter: grayscale(40%);
+
+	left: 0;
+	padding: 0;
+	top: 0;
 }
 
+#maj-div-overlay {
+	height: 955px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+	width: 100%;
+	
+	position: relative !important;
+}
 
-/* overlay text */
-h2 {
-   position: absolute;
-   top: 0;
-   left: 0; 
-   width: 100%; 
-   
-   color: white; 
-   font: bold Helvetica, Sans-Serif; 
-   font-size: 18px; 
-   letter-spacing: -1px;  
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 15px 0px 15px 15px;
-   line-height: 30px;
-   text-align: center;
+#maj-div-text {
+	height: 955px;
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#inner {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	width: 1900px;
 }
 
 /**********************************
 PROJECTS:
 ***********************************/
 article#projects {
-	background: #CCC;
-}
-
-#projects-info > h1 {
-	text-align: left;
-}
-
-#projects-info > div.col-md-12 {
+	background: white;
 	padding: 0 0 100px 0;
-	
-	font-size: 	24px;
+}
+
+#projects-info > h2 {
+	text-align: center;
+}
+
+#projects-info .col-md-12 {
+	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+.project-title, .project-desc {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.project-desc {
+	font-size: 24px;
+}
+
+.project-img {
+	max-width: 100%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
 
 
 /**********************************
+DIVIDER
+***********************************/
+#div-img-bg {
+	background-image: url(../img/contact-border-img.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	max-height: 500px;
+	
+	-webkit-filter: grayscale(40%);
+	-moz-filter: grayscale(40%);
+	filter: grayscale(40%);
+
+	left: 0;
+	padding: 0;
+	top: 0;
+}
+
+#div-overlay {
+	height: 500px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+	width: 100%;
+	
+	position: relative !important;
+}
+
+#div-text {
+	height: 500px;
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#inner {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	width: 1900px;
+}
+
+/**********************************
 CONTACT:
 ***********************************/
+
+.contact-text {
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
+	font-size: 18px;	
+}
 
 .contact-header {
 	padding: 0 0 30px 15px;	
@@ -193,7 +250,7 @@ FOOTER
 footer {	
 	padding: 70px 0 50px;
 	
-	background: #333;
+	background: black;
 	color: white;
 }
 
