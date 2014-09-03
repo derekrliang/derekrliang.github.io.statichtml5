@@ -5,7 +5,7 @@ HEADING & NAVI
 ***********************************/
 
 header {
-  padding: 25px 0 20px 0;
+  padding: 10px 0 0 0;
 }
 
 nav li {
@@ -23,5 +23,13 @@ nav {
 }
 
 @media screen and (min-width: 660px) {
-	
+/**********************************
+HEADING & NAVI
+***********************************/
+
+header {
+  position: fixed;
+  z-index: 5;
+}
+
 }
