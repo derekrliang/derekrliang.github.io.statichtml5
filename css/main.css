@@ -3,18 +3,31 @@ GENERAL
 ***********************************/
 
 body {
-  font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 #wrapper {
-  max-width: 940px;
-  margin: 0 auto;
-  padding: 0 5%;
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
 }
 
 a {
-  text-decoration: none;
+	color: #e09e0f;
 }
+
+nav a, nav a:visited {
+	color: #ffffff;
+}
+
+nav a:hover {
+	color: #e09e0f;	
+}
+
 
 div {
 	display: block;
@@ -32,14 +45,34 @@ div {
 	background: #E4DFBA;
 }
 
-h1, h2 {
+h1, h2, h3, h4, h5 {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: normal;
+}
+
+h1 {
 	font-size: 60px;
 }
 
-h2 {
+h2, h3 {
 	font-size: 30px;
+}
+
+h2 {
+	text-align: center;	
+}
+
+h2:after {
+	border-bottom: 2px solid black;
+	content: "";
+	display: block;
+	position: relative;
+	top: 15px;
+	width: 20px;
+	z-index: 0;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 50px;
 }
 
 /**********************************
@@ -91,9 +124,9 @@ article {
 }
 
 /**********************************
-1: MAJOR
+1: INTRO
 ***********************************/
-#maj-div-img-bg {
+#intro-div-img-bg {
 	background-image: url(../img/school.png);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -108,7 +141,7 @@ article {
 	top: 0;
 }
 
-#maj-div-overlay {
+#intro-div-overlay {
 	height: 955px;
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
 	width: 100%;
@@ -116,7 +149,7 @@ article {
 	position: relative !important;
 }
 
-#maj-div-text {
+#intro-div-text {
 	height: 955px;
 	display: table;
 	position: absolute;
@@ -133,11 +166,22 @@ article {
 }
 
 /**********************************
+ABOUTME:
+***********************************/
+article#aboutme {
+	padding: 75px 0 100px 0;	
+}
+
+#aboutme-info {
+	text-align: center;
+}
+
+/**********************************
 PROJECTS:
 ***********************************/
 article#projects {
-	background: white;
-	padding: 0 0 100px 0;
+	background: #F9F9F9;
+	padding: 75px 0 100px 0;
 }
 
 #projects-info > h2 {
@@ -147,6 +191,18 @@ article#projects {
 #projects-info .col-md-12 {
 	padding: 50px 0 0 0;
 	text-align: center;
+}
+
+#projects-info .just-started {
+	color: #F90;
+}
+
+.project-name, .project-status {
+	display: inline;
+}
+
+.project-status {
+	font-size: 14px;	
 }
 
 .project-title, .project-desc {
@@ -176,11 +232,7 @@ DIVIDER
 	background-repeat: no-repeat;
 	background-size: cover;
 	
-	max-height: 500px;
-	
-	-webkit-filter: grayscale(40%);
-	-moz-filter: grayscale(40%);
-	filter: grayscale(40%);
+	max-height: 400px;
 
 	left: 0;
 	padding: 0;
@@ -188,15 +240,15 @@ DIVIDER
 }
 
 #div-overlay {
-	height: 500px;
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+	height: 400px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.30);
 	width: 100%;
 	
 	position: relative !important;
 }
 
 #div-text {
-	height: 500px;
+	height: 400px;
 	display: table;
 	position: absolute;
 	top: 0;
@@ -276,23 +328,6 @@ body {
 .img {
 	background: #999
 }
-
-/* Links */
-a {
-  color: #e09e0f;
-}
-
-/* Nav Link */
-nav a, nav a:visited {
-  color: #ffffff;
-}
-
-/* selected nav link */
-nav a.selected, nav a:hover {
-  color: #e09e0f;
-}
-
-
 
 
 
