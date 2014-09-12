@@ -4,6 +4,7 @@ GENERAL
 
 body {
 	font-family: 'Titillium Web', sans-serif;
+	font-weight: normal;
 }
 
 #wrapper {
@@ -45,16 +46,11 @@ div {
 	background: #E4DFBA;
 }
 
-h1, h2, h3, h4, h5 {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: normal;
-}
-
 h1 {
-	font-size: 60px;
+	font-size: 45px;
 }
 
-h2, h3 {
+h2, h3, h4, h5 {
 	font-size: 30px;
 }
 
@@ -73,6 +69,15 @@ h2:after {
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 50px;
+}
+
+/* Hide the dividers for mobile */
+h4 {
+	display: none;	
+}
+
+h6 {
+	font-size: 24px;	
 }
 
 /**********************************
@@ -94,7 +99,6 @@ nav {
   
   /* Font Styling */
   color: #FFF;
-  font-family: 'Titillium Web', sans-serif;
   font-size: 24px;
 }
 
@@ -165,16 +169,213 @@ article {
 	width: 1900px;
 }
 
+.dev-title {
+	font-size: 30px;
+	cursor: pointer; cursor: hand;
+	display: block;
+	
+	padding: 0 10px 0 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 2px solid rgba(255, 255, 255, .2);
+		
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+	
+	-moz-transition: 400ms ease -moz-transform;
+	-ms-transition: 400ms ease -ms-transform;
+	-o-transition: 400ms ease -o-transform;
+	-webkit-transition: 400ms ease -webkit-transform;
+	transition: 400ms ease transform;
+}
+
+.dev-title:hover, .dev-title:active {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dev-title-active {
+	/* Highlight the active title */
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #e09e0f;	
+}
+
+.dev-content-wrap {
+	padding: 50px 0 0 0%;
+	
+	/* Hide element with overflow */
+	overflow: hidden;
+}
+
+.dev-content {
+	/* Centering fixed, absolute elements */
+	max-width: 800px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/* */
+	
+	font-size: 24px;
+
+	/* Non-changing CSS3 transition elements; establishes the base transition properties */
+	position: absolute;
+	
+	/* Hide element with overflow */
+	height: 300px;
+	
+	-moz-transition: 400ms ease -moz-transform;
+	-ms-transition: 400ms ease -ms-transform;
+	-o-transition: 400ms ease -o-transform;
+	-webkit-transition: 400ms ease -webkit-transform;
+	transition: 400ms ease transform;
+	
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.hide-content {
+	/* Sends the element downward, hiding it from the user */
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	
+	-moz-transform: translateY(200%) translateZ(0);
+	-ms-transform: translateY(200%) translateZ(0);
+	-o-transform: translateY(200%) translateZ(0);
+	-webkit-transform: translateY(200%) translateZ(0);
+	transform: translateY(200%) translateZ(0);
+	
+	-moz-transform: translate3d(0, 200%, 0);
+	-ms-transform: translate3d(0, 200%, 0);
+	-o-transform: translate3d(0, 200%, 0);
+	-webkit-transform: translate3d(0, 200%, 0);
+	transform: translate3d(0, 200%, 0);
+}
+
+.show-content {	
+	/* Sends the element to its natural position, revealing it */
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
 /**********************************
 ABOUTME:
 ***********************************/
 article#aboutme {
-	padding: 75px 0 100px 0;	
+	padding: 75px 0 50px 0;	
 }
 
 #aboutme-info {
 	text-align: center;
 }
+
+#aboutme p {
+	padding: 30px 0 0 0;	
+}
+
+/**********************************
+SLIDER:
+***********************************/
+
+/*
+.slide {
+	color: black;
+	background: #DFF8FF;
+	
+	padding: 25px 25px 100px 25px;
+	
+	height: 300px;
+	
+	text-align: center;
+	
+	overflow: hidden;
+	
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	border-radius: 50px;
+
+	-webkit-transition: background 300ms ease;
+	-moz-transition: background 300ms ease;
+	transition: background 300ms ease;
+}
+
+.slider-content {
+	position: relative;
+	
+	height: 300px;
+	
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	
+	-moz-transform: translateY(1000%) translateZ(0);
+	-ms-transform: translateY(1000%) translateZ(0);
+	-o-transform: translateY(1000%) translateZ(0);
+	-webkit-transform: translateY(1000%) translateZ(0);
+	transform: translateY(1000%) translateZ(0);
+	
+	-moz-transform: translate3d(0, 1000%, 0);
+	-ms-transform: translate3d(0, 1000%, 0);
+	-o-transform: translate3d(0, 1000%, 0);
+	-webkit-transform: translate3d(0, 1000%, 0);
+	transform: translate3d(0, 1000%, 0);
+	
+	-moz-transition: 400ms ease -moz-transform;
+	-ms-transition: 400ms ease -ms-transform;
+	-o-transition: 400ms ease -o-transform;
+	-webkit-transition: 400ms ease -webkit-transform;
+	transition: 400ms ease transform;
+	
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+}
+
+.slide:hover, .slide:active {
+	color: white;
+	background: #333;
+	border: 1px solid thin #333;
+}
+
+.slide:hover .slider-content, .slide:active .slider-content {
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+	
+	
+#slider {
+	padding: 0 0 100px 0;
+}
+
+*/
 
 /**********************************
 PROJECTS:
@@ -188,9 +389,8 @@ article#projects {
 	text-align: center;
 }
 
-#projects-info .col-md-12 {
+#projects-info .col-md-6 {
 	padding: 50px 0 0 0;
-	text-align: center;
 }
 
 #projects-info .just-started {
@@ -205,9 +405,11 @@ article#projects {
 	font-size: 14px;	
 }
 
+.project-langs {
+	font-size: 14px;	
+}
+
 .project-title, .project-desc {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: normal;
 	font-size: 30px;
 }
 
@@ -268,8 +470,6 @@ CONTACT:
 ***********************************/
 
 .contact-text {
-	font-family: 'Titillium Web', sans-serif;
-	font-weight: normal;
 	font-size: 18px;	
 }
 
@@ -278,7 +478,7 @@ CONTACT:
 }
 
 #contact {
-	padding: 100px 0px 100px 0;
+	padding: 100px 0px 75px 0;
 	
 	color: black;
 	background: white;
@@ -287,6 +487,10 @@ CONTACT:
 .contact-email-img {
 	padding: 0 10px 0 0;
 	max-width: 50px;
+}
+
+.contact-text > div {
+	padding: 0 0 50px 0;	
 }
 /**********************************
 FOOTER
@@ -300,8 +504,7 @@ FOOTER
 }
 
 footer {	
-	padding: 70px 0 50px;
-	
+	padding: 30px 0 40px;
 	background: black;
 	color: white;
 }

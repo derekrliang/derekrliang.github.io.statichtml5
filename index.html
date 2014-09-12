@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Derek Liang</title>
-<meta name="description" content="Derek Liang is a software developer. His personal website provides an overview of his background and projects, along with his contact information.">
+<title>Derek Liang - Software Engineer</title>
+<meta name="description" content="Derek Liang is a software engineer. His personal website provides an overview of his background and projects, along with his contact information.">
 <link rel="stylesheet" href="css/normalize.css">
 <link href='http://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -29,7 +29,7 @@
   <div class="container">
     <nav>
       <ul>
-      	<li><div id="logo">D.L.</div></li>
+      	<li><a href="#top" id="logo">D.L.</a></li>
         <li><a href="#aboutme">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -44,7 +44,20 @@
     	<div id="intro-div-text">
         	<div id="inner">
                 <h1>Derek Liang</h1>
-                <h3>Web Developer&nbsp;&nbsp;|&nbsp;&nbsp;Software Engineer&nbsp;&nbsp;|&nbsp;&nbsp;Android Developer</h2>
+                
+                <div>
+                    <div class="dev-title" hash="webdev">Web Developer</div>
+                    <h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4>
+                    <div class="dev-title" hash="softdev">Software Developer</div>
+                    <h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4>
+                    <div class="dev-title" hash="androiddev">Android Developer</div>
+                </div>
+                
+                <div class="dev-content-wrap">
+                	<div class="dev-content hide-content">Discovered the art and necessity of web development in connecting with today's world.</div>
+                    <div class="dev-content hide-content">Majoring in Computer Science at UC Irvine, motivated by the usability and potential of software development.</div>
+                    <div class="dev-content hide-content">Inspired by the innovation and future of mobile applications.</div>
+                </div> 
             </div>
         </div>
     </div>
@@ -55,27 +68,45 @@
   <div class="container">
     <div id="aboutme-info">
       <h2>About Me</h2>
-      <div class="col-md-3"> </div>
-      <div class="col-md-6">
-		<h3>Derek Liang</h3>
-        <h4>I am currently an undergraduate at University of California, Irvine. I am pursuing a B.S. in Computer Science, with specializations in Embedded Systems and Artificial Intelligence.</h4>
+      <div class="col-md-6 col-md-offset-3">
+      	<p>
+			<h5>Education</h5>
+	        <h6>I am currently an undergraduate at University of California, Irvine. I am pursuing a B.S. in Computer Science, with specializations in Embedded Systems and Artificial Intelligence.</h6>
+        </p>
       </div>
     </div>
   </div>
 </article>
 
+<!--
+<article id="slider">
+	<div class="container">
+    	<div class="col-md-6 col-md-offset-3">
+            <div class="slide active">
+                <div class="slider-title"><h3>Web Developer</h3>
+                </div>
+                <div class="slider-content"><h6></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+-->
+
 <article id="projects">
   <div class="container">
     <div id="projects-info">
       <h2>Projects</h2>
-      <div class="col-md-12">
+      
+      <div class="col-md-6 col-md-offset-3">
         <div class="project-title">
-          <div class="project-name">consol3 </div>
+          <div class="project-name">consol3</div>
           <div class="project-status just-started">work-in-progress</div>
+          <div class="project-langs">html5 css3 javascript jquery</div>
         </div>
         <a href="http://derekrliang.github.io/consol3/"><img class="project-img" src="img/console.png"/></a>
         <div class="project-desc">
-          a javascript based interactive website simulating a windows dos console. primarily a test-site for javascript/jquery.
+         <h6> a javascript based interactive website simulating a windows dos console. primarily a test-site for javascript/jquery. </h6>
         </div>
       </div>
     </div>
@@ -96,7 +127,7 @@
 <article id="contact">
   <div class="container">
     <div id="contact-info">
-      <div class="row contact-text">
+      <div class="contact-text">
         <div class="col-md-6">If you have any questions or concerns, please feel free to email me.</div>
         <div class="col-md-6"><a href="mailto:dliang2@uci.edu"><img class="contact-email-img" src="img/email.png"/></a>dliang2[at]uci.edu</div>
       </div>
@@ -110,5 +141,7 @@
     <div class="left"> &copy; 2014 Derek Liang </div>
   </div>
 </footer>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"> </script>
 </body>
 </html>

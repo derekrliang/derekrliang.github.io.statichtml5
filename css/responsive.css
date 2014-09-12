@@ -20,16 +20,27 @@ nav a {
 nav {
 	margin: 0;
 }
+
+h1 {
+	font-size: 60px;
+}
+
+.dev-title {
+	border-radius: 5px;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
 }
 
 @media screen and (min-width: 660px) {
 /**********************************
 HEADING & NAVI
 ***********************************/
-
-header {
-  position: fixed;
-  z-index: 5;
+/* Show the dividers for non-mobiles */
+h3, h4, .dev-title {
+	display: inline-block;
 }
 
 }
