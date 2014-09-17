@@ -309,6 +309,10 @@ article#projects {
 	color: #F90;
 }
 
+#projects-info .finished {
+	color: #090;
+}
+
 .project-name, .project-status {
 	display: inline;
 }
