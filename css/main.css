@@ -92,6 +92,18 @@ header {
   background: black;
 }
 
+i.fa-bars {
+	display: block;
+	color: white;
+	font-size: 18px;
+	padding: 15px 15px;
+	cursor: pointer;	
+}
+
+#menu {
+	display: none;
+}
+
 nav {
   display: block;
   text-align: center;
@@ -175,6 +187,7 @@ article {
 	display: block;
 	
 	padding: 0 10px 0 10px;
+	margin-bottom: 10px;
 	
 	background-color: rgba(0, 0, 0, 0.4);
 	border: 2px solid rgba(255, 255, 255, .2);

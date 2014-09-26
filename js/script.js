@@ -1,8 +1,8 @@
-console.log("script.js");
-
+$( document ).ready(function() {
 var devTCMap = {};
 var devTitles = document.getElementsByClassName('dev-title');
 var devContents = document.getElementsByClassName('dev-content');
+var navMenu = $('#menu');
 
 for (var i = 0; i < devTitles.length; i++) {
 	devTCMap[devTitles[i].getAttribute("hash")] = devContents[i];
@@ -41,4 +41,20 @@ $(function() {
       }
     }
   });
+});
+
+
+$(function() {
+  $('i.fa-bars').click(function() {
+	  if (this.classList.contains("on")) {
+		  this.className = "fa fa-bars";
+		  navMenu.hide();
+	  } else {
+		  this.className += " on";
+		  navMenu.show();
+	  }
+  });
+});
+
+
 });

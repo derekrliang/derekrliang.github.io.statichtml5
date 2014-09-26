@@ -3,7 +3,6 @@
 /**********************************
 HEADING & NAVI
 ***********************************/
-
 header {
   padding: 10px 0 0 0;
 }
@@ -11,6 +10,14 @@ header {
 nav li {
   display: inline-block;
   margin: 0;
+}
+
+#menu {
+	display: block;
+}
+
+i.fa-bars {
+	display: none;	
 }
 
 nav a {
