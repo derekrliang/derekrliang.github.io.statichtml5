@@ -128,11 +128,11 @@ div.spec-content div {
 	-webkit-transform: translateX(0);
 	transform: translateX(0);
 	
-	-moz-transform: translateX(200%) translateZ(0);
-	-ms-transform: translateX(200%) translateZ(0);
-	-o-transform: translateX(200%) translateZ(0);
-	-webkit-transform: translateX(200%) translateZ(0);
-	transform: translateX(200%) translateZ(0);
+	-moz-transform: translateX(-200%) translateZ(0);
+	-ms-transform: translateX(-200%) translateZ(0);
+	-o-transform: translateX(-200%) translateZ(0);
+	-webkit-transform: translateX(-200%) translateZ(0);
+	transform: translateX(-200%) translateZ(0);
 }
 
 .spec-content[data-tab='0'] div:nth-child(1),
