@@ -3,14 +3,15 @@ ABOUTME:
 ***********************************/
 article#aboutme {
 	padding: 75px 0 50px 0;	
+	text-align: left;
 }
 
-#aboutme-info {
-	text-align: center;
+div.profile-img {
+	padding: 0 0 30px 0;
 }
 
-
-
-
-
-
+div.profile-img img {
+	border-radius: 100px;
+	width: 100%;
+	max-width: 200px;
+}

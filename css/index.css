@@ -147,9 +147,6 @@ div.spec-content div {
 }
 
 @media screen and (min-width: 660px) {
-/**********************************
-HEADING & NAVI
-***********************************/
 .spec-tabs a {
 	border-radius: 6px;
 }
@@ -164,7 +161,7 @@ header {
 }
 
 /* Unstack spec tab/content */
-h3, h4, .spec-tabs a {
+.spec-tabs a {
 	display: inline-block;
 }
 }

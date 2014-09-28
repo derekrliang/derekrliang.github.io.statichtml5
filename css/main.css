@@ -1,7 +1,6 @@
 /**********************************
 GENERAL
 ***********************************/
-
 body {
 	font-family: 'Titillium Web', sans-serif;
 	font-weight: normal;
@@ -47,6 +46,7 @@ div {
 
 h1 {
 	font-size: 45px;
+	text-align: center;
 }
 
 h2, h3, h4, h5 {
@@ -57,6 +57,12 @@ h2 {
 	font-size: 30px;
 	text-align: left;
 	border-bottom: 1px solid #eeeeee;
+	padding: 10px 0 10px 0;
+}
+
+/* Same as h1, but with left align */
+h3 {
+	font-size: 45px;
 }
 
 p {
@@ -129,109 +135,6 @@ nav li {
 
 nav a {
 	padding: 15px 0 0 0;
-}
-
-/**********************************
-ABOUTME:
-***********************************/
-article#aboutme {
-	padding: 75px 0 50px 0;	
-}
-
-#aboutme-info {
-	text-align: center;
-}
-
-/**********************************
-PROJECTS:
-***********************************/
-article#projects {
-	background: #F9F9F9;
-	padding: 75px 0 100px 0;
-}
-
-#projects-info > h2 {
-	text-align: center;
-}
-
-#projects-info .col-md-6 {
-	padding: 50px 0 0 0;
-}
-
-#projects-info .just-started {
-	color: #F90;
-}
-
-#projects-info .finished {
-	color: #090;
-}
-
-.project-name, .project-status {
-	display: inline;
-}
-
-.project-status {
-	font-size: 14px;	
-}
-
-.project-langs {
-	font-size: 14px;	
-}
-
-.project-title, .project-desc {
-	font-size: 30px;
-}
-
-.project-desc {
-	font-size: 24px;
-}
-
-.project-img {
-	max-width: 100%;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-
-/**********************************
-DIVIDER
-***********************************/
-#div-img-bg {
-	background-image: url(../img/contact-border-img.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-	max-height: 400px;
-
-	left: 0;
-	padding: 0;
-	top: 0;
-}
-
-#div-overlay {
-	height: 400px;
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.30);
-	width: 100%;
-	
-	position: relative !important;
-}
-
-#div-text {
-	height: 400px;
-	display: table;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-#inner {
-	color: white;
-	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
-	width: 1900px;
 }
 
 /**********************************

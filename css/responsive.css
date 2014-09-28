@@ -37,6 +37,7 @@ nav li {
 
 nav.menu {
 	display: block;
+	height: 40px;
 }
 
 i.fa-bars {
