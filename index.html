@@ -10,6 +10,7 @@
 <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="css/main.css">
 <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/index.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 <script>
@@ -23,18 +24,18 @@
   ga('send', 'pageview');
 
 </script>
-
 </head>
+
 <body id="top">
 <header>
   <div class="container">
   	<i class="fa fa-bars"></i>
-    <nav>
-      <ul id="menu">
-      	<li><a href="#top" id="logo">D.L.</a></li>
-        <li><a href="#aboutme">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    <nav class="menu">
+      <ul>
+      	<li><a href="index.html" id="logo">D.L.</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -47,93 +48,25 @@
         	<div id="inner">
                 <h1>Derek Liang</h1>
                 
-                <div>
-                    <div class="dev-title" hash="webdev">Web Developer</div>
+                <div class="spec-tabs">
+                    <a href="#">Web Developer</a>
                     <h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4>
-                    <div class="dev-title" hash="softdev">Software Developer</div>
+                    <a href="#">Software Developer</a>
                     <h4>&nbsp;&nbsp;|&nbsp;&nbsp;</h4>
-                    <div class="dev-title" hash="androiddev">Android Developer</div>
+                    <a href="#">Android Developer</a>
                 </div>
                 
-                <div class="dev-content-wrap">
-                	<div class="dev-content hide-content">Discovered the art and necessity of web development in connecting with today's world.</div>
-                    <div class="dev-content hide-content">Majoring in Computer Science at UC Irvine, motivated by the usability and potential of software development.</div>
-                    <div class="dev-content hide-content">Inspired by the innovation and future of mobile applications.</div>
+                <div class="spec-content">
+                	<div>Discovered the art and necessity of web development in connecting with today's world.</div>
+                    <div>Majoring in Computer Science at UC Irvine, motivated by the usability and potential of software development.</div>
+                    <div>Inspired by the innovation and future of mobile applications.</div>
                 </div> 
             </div>
         </div>
     </div>
   </div>
 </article>
-
-<article id="aboutme">
-  <div class="container">
-    <div id="aboutme-info">
-      <h2>About Me</h2>
-      <div class="col-md-6 col-md-offset-3">
-      	<p>
-			<h5>Education</h5>
-	        <h6>I am currently an undergraduate at University of California, Irvine. I am pursuing a B.S. in Computer Science, with specializations in Embedded Systems and Artificial Intelligence.</h6>
-        </p>
-      </div>
-    </div>
-  </div>
-</article>
-
-<article id="projects">
-  <div class="container">
-    <div id="projects-info">
-      <h2>Projects</h2>
-      
-      <div class="col-md-6">
-        <div class="project-title">
-          <div class="project-name">consol3</div>
-          <div class="project-status just-started">work-in-progress</div>
-          <div class="project-langs">html5 css3 javascript jquery</div>
-        </div>
-        <a href="http://derekrliang.github.io/consol3/"><img class="project-img" src="img/console.png"/></a>
-        <div class="project-desc">
-         <h6> a javascript based interactive website simulating a windows dos console. primarily a test-site for javascript/jquery. </h6>
-        </div>
-      </div>
-      
-      <div class="col-md-6">
-        <div class="project-title">
-          <div class="project-name">Project X</div>
-          <div class="project-status finished">done</div>
-          <div class="project-langs">c# unity</div>
-        </div>
-        <a href="http://derekrliang.github.io/ProjectX/"><img class="project-img" src="img/projectx.png"/></a>
-        <div class="project-desc">
-         <h6> a 2d platform side-scroller video game. it was developed in unity using c# with monodevelop ide. </h6>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-
-<article id="divider">
-  <div id="div-img-bg">
-	<div id="div-overlay">
-    	<div id="div-text">
-        	<div id="inner">
-            </div>
-        </div>
-    </div>
-  </div>
-</article>
-
-<article id="contact">
-  <div class="container">
-    <div id="contact-info">
-      <div class="contact-text">
-        <div class="col-md-6">If you have any questions or concerns, please feel free to email me.</div>
-        <div class="col-md-6"><a href="mailto:dliang2@uci.edu"><img class="contact-email-img" src="img/email.png"/></a>dliang2[at]uci.edu</div>
-      </div>
-    </div>
-  </div>
-</article>
-
+<!--@-->
 <footer>
   <div class="container">
     <div class="right"> <a href="#top" id="go-top"> <span class="glyphicon glyphicon-circle-arrow-up" /> </a> </div>
@@ -142,5 +75,6 @@
 </footer>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="js/script.js"> </script>
+<script type="text/javascript" src="js/index.js"> </script>
 </body>
 </html>

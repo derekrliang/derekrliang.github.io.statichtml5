@@ -1,0 +1,187 @@
+/**********************************
+ARTICLE
+***********************************/
+
+article {
+	/* border-bottom: #dfdfdf 1px solid; */
+}
+
+/**********************************
+1: INTRO
+***********************************/
+#intro-div-img-bg {
+	background-image: url(../img/school.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	-webkit-filter: grayscale(40%);
+	-moz-filter: grayscale(40%);
+	filter: grayscale(40%);
+
+	left: 0;
+	padding: 0;
+	top: 0;
+}
+
+#intro-div-overlay {
+	height: 955px;
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+	width: 100%;
+	
+	position: relative !important;
+}
+
+#intro-div-text {
+	height: 955px;
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#inner {
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	display: table-cell;
+	width: 1900px;
+}
+
+.spec-tabs a {
+	font-size: 30px;
+	cursor: pointer; cursor: hand;
+	display: block;
+	
+	padding: 0 10px 0 10px;
+	margin-bottom: 10px;
+	
+	background-color: rgba(0, 0, 0, 0.4);
+	border: 2px solid rgba(255, 255, 255, .2);
+		
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+	
+	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
+	transition: border .25s linear, color .25s linear, background-color .25s linear;
+}
+
+.spec-tabs[data-tab='0'] a:nth-child(1),
+.spec-tabs[data-tab='2'] a:nth-child(3),
+.spec-tabs[data-tab='4'] a:nth-child(5)
+{
+	/* Highlight the active title */
+	background-color: rgba(224, 158, 15, 1);
+	border: 2px solid rgba(224, 158, 15, 1);
+	color: black;
+}
+
+div.spec-content {
+	padding: 50px 0 0 0%;
+	
+	/* Hide element with overflow */
+	overflow: hidden;
+}
+
+div.spec-content div {
+	/* Centering fixed, absolute elements */
+	max-width: 800px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	/* */
+	
+	font-size: 24px;
+
+	/* Non-changing CSS3 transition elements; establishes the base transition properties */
+	position: absolute;
+	
+	/* Hide element with overflow */
+	height: 300px;
+	
+	/* Stop user text selection */
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+	
+	-moz-transition: 400ms ease -moz-transform;
+	-ms-transition: 400ms ease -ms-transform;
+	-o-transition: 400ms ease -o-transform;
+	-webkit-transition: 400ms ease -webkit-transform;
+	transition: 400ms ease transform;
+	
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.spec-content div {
+	/* Sends the element downward, hiding it from the user */
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	
+	-moz-transform: translateX(200%) translateZ(0);
+	-ms-transform: translateX(200%) translateZ(0);
+	-o-transform: translateX(200%) translateZ(0);
+	-webkit-transform: translateX(200%) translateZ(0);
+	transform: translateX(200%) translateZ(0);
+}
+
+.spec-content[data-tab='0'] div:nth-child(1),
+.spec-content[data-tab='2'] div:nth-child(2),
+.spec-content[data-tab='4'] div:nth-child(3) {	
+	/* Sends the element to its natural position, revealing it */
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+@media screen and (min-width: 660px) {
+/**********************************
+HEADING & NAVI
+***********************************/
+.spec-tabs a {
+	border-radius: 6px;
+}
+
+.dev-title:hover {
+	border: 2px solid rgba(224, 158, 15, 1);
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+}
+
+/* Unstack spec tab/content */
+h3, h4, .spec-tabs a {
+	display: inline-block;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

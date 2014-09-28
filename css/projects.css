@@ -1,0 +1,50 @@
+/**********************************
+PROJECTS:
+***********************************/
+article#projects {
+	background: #F9F9F9;
+	padding: 75px 0 100px 0;
+}
+
+#projects-info > h2 {
+	text-align: center;
+}
+
+#projects-info .col-md-6 {
+	padding: 50px 0 0 0;
+}
+
+#projects-info .just-started {
+	color: #F90;
+}
+
+#projects-info .finished {
+	color: #090;
+}
+
+.project-name, .project-status {
+	display: inline;
+}
+
+.project-status {
+	font-size: 14px;	
+}
+
+.project-langs {
+	font-size: 14px;	
+}
+
+.project-title, .project-desc {
+	font-size: 30px;
+}
+
+.project-desc {
+	font-size: 24px;
+}
+
+.project-img {
+	max-width: 100%;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}

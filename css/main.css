@@ -38,7 +38,6 @@ div {
 	text-align: center;
 }
 
-
 .separate-div {
 	padding: 50px 0 50px 0;
 	
@@ -51,24 +50,19 @@ h1 {
 }
 
 h2, h3, h4, h5 {
-	font-size: 30px;
+	text-align: left;
 }
 
 h2 {
-	text-align: center;	
+	font-size: 30px;
+	text-align: left;
+	border-bottom: 1px solid #eeeeee;
 }
 
-h2:after {
-	border-bottom: 2px solid black;
-	content: "";
-	display: block;
-	position: relative;
-	top: 15px;
-	width: 20px;
-	z-index: 0;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 50px;
+p {
+	text-align: left;
+	padding-bottom: 20px;
+	font-size: 18px;
 }
 
 /* Hide the dividers for mobile */
@@ -93,25 +87,31 @@ header {
 }
 
 i.fa-bars {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
 	display: block;
 	color: white;
 	font-size: 18px;
 	padding: 15px 15px;
-	cursor: pointer;	
+	cursor: pointer;
+	background: black;
+	border-radius: 100px;
 }
 
-#menu {
-	display: none;
-}
-
-nav {
-  display: block;
+nav.menu {
+  display: none;
   text-align: center;
   margin: 0 0 0 -50px;
   
   /* Font Styling */
   color: #FFF;
   font-size: 24px;
+}
+
+.show {
+	display: block !important;	
 }
 
 #logo {
@@ -132,162 +132,6 @@ nav a {
 }
 
 /**********************************
-ARTICLE
-***********************************/
-
-article {
-	/* border-bottom: #dfdfdf 1px solid; */
-}
-
-/**********************************
-1: INTRO
-***********************************/
-#intro-div-img-bg {
-	background-image: url(../img/school.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
-	-webkit-filter: grayscale(40%);
-	-moz-filter: grayscale(40%);
-	filter: grayscale(40%);
-
-	left: 0;
-	padding: 0;
-	top: 0;
-}
-
-#intro-div-overlay {
-	height: 955px;
-	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
-	width: 100%;
-	
-	position: relative !important;
-}
-
-#intro-div-text {
-	height: 955px;
-	display: table;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-#inner {
-	color: white;
-	text-align: center;
-	vertical-align: middle;
-	display: table-cell;
-	width: 1900px;
-}
-
-.dev-title {
-	font-size: 30px;
-	cursor: pointer; cursor: hand;
-	display: block;
-	
-	padding: 0 10px 0 10px;
-	margin-bottom: 10px;
-	
-	background-color: rgba(0, 0, 0, 0.4);
-	border: 2px solid rgba(255, 255, 255, .2);
-		
-	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* mozilla browsers */
-    -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
-	
-	-webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
-	transition: border .25s linear, color .25s linear, background-color .25s linear;
-}
-
-
-.dev-title-active {
-	/* Highlight the active title */
-	background-color: rgba(224, 158, 15, 1);
-	border: 2px solid rgba(224, 158, 15, 1);
-	color: black;
-}
-
-.dev-content-wrap {
-	padding: 50px 0 0 0%;
-	
-	/* Hide element with overflow */
-	overflow: hidden;
-}
-
-.dev-content {
-	/* Centering fixed, absolute elements */
-	max-width: 800px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	/* */
-	
-	font-size: 24px;
-
-	/* Non-changing CSS3 transition elements; establishes the base transition properties */
-	position: absolute;
-	
-	/* Hide element with overflow */
-	height: 300px;
-	
-	/* Stop user text selection */
-	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
-    -moz-user-select: none; /* mozilla browsers */
-    -khtml-user-select: none; /* webkit (konqueror) browsers */
-    -ms-user-select: none; /* IE10+ */
-	
-	-moz-transition: 400ms ease -moz-transform;
-	-ms-transition: 400ms ease -ms-transform;
-	-o-transition: 400ms ease -o-transform;
-	-webkit-transition: 400ms ease -webkit-transform;
-	transition: 400ms ease transform;
-	
-	-moz-backface-visibility: hidden;
-	-ms-backface-visibility: hidden;
-	-o-backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-.hide-content {
-	/* Sends the element downward, hiding it from the user */
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-o-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	
-	-moz-transform: translateY(200%) translateZ(0);
-	-ms-transform: translateY(200%) translateZ(0);
-	-o-transform: translateY(200%) translateZ(0);
-	-webkit-transform: translateY(200%) translateZ(0);
-	transform: translateY(200%) translateZ(0);
-	
-	-moz-transform: translate3d(0, 200%, 0);
-	-ms-transform: translate3d(0, 200%, 0);
-	-o-transform: translate3d(0, 200%, 0);
-	-webkit-transform: translate3d(0, 200%, 0);
-	transform: translate3d(0, 200%, 0);
-}
-
-.show-content {	
-	/* Sends the element to its natural position, revealing it */
-	-moz-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-o-transform: translateY(0);
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	
-	-moz-transform: translate3d(0, 0, 0);
-	-ms-transform: translate3d(0, 0, 0);
-	-o-transform: translate3d(0, 0, 0);
-	-webkit-transform: translate3d(0, 0, 0);
-	transform: translate3d(0, 0, 0);
-}
-
-/**********************************
 ABOUTME:
 ***********************************/
 article#aboutme {
@@ -296,10 +140,6 @@ article#aboutme {
 
 #aboutme-info {
 	text-align: center;
-}
-
-#aboutme p {
-	padding: 30px 0 0 0;	
 }
 
 /**********************************
