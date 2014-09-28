@@ -138,33 +138,6 @@ nav a {
 }
 
 /**********************************
-CONTACT:
-***********************************/
-
-.contact-text {
-	font-size: 18px;	
-}
-
-.contact-header {
-	padding: 0 0 30px 15px;	
-}
-
-#contact {
-	padding: 100px 0px 75px 0;
-	
-	color: black;
-	background: white;
-}
-
-.contact-email-img {
-	padding: 0 10px 0 0;
-	max-width: 50px;
-}
-
-.contact-text > div {
-	padding: 0 0 50px 0;	
-}
-/**********************************
 FOOTER
 ***********************************/
 
