@@ -1,4 +1,43 @@
 /**********************************
+CONTACT:
+***********************************/
+div.contact-text {
+	padding: 200px 0 200px 0;
+	font-size: 18px;
+	
+	transition: color 0.5s ease;
+}
+
+div.contact-text:hover {
+	color: #CF9;
+}
+
+article#contact {
+	padding: 300px 0px 300px 0;
+	color: white;
+	background: black;
+}
+
+.contact-email-img {
+	padding: 0 10px 0 0;
+	max-width: 50px;
+}
+
+.contact-text > div {
+	padding: 0 0 50px 0;	
+}
+
+/* ICONS */
+div.icon {
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+div.icon i {
+	padding-right: 10px;
+}
+
+/**********************************
 ABOUTME:
 ***********************************/
 article#aboutme {
@@ -15,3 +54,4 @@ div.profile-img img {
 	width: 100%;
 	max-width: 200px;
 }
+
