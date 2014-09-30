@@ -11,6 +11,8 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://vjs.zencdn.net/4.8/video-js.css" rel="stylesheet">
+	<script src="http://vjs.zencdn.net/4.8/video.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/projects.css">
 	<link rel="stylesheet" href="css/responsive.css">
@@ -84,6 +86,17 @@
 					<div class="project-img">
 						<img src="img/projectx.png">
 					</div>
+                    
+                    <h2>LED Pong <a href="https://github.com/derekrliang/led-pong">[repo]</a></h2>
+					<p>Group of two working on final project for CS 145: Embedded Systems. Using breadboard, Atmel ATMEGA32, 32x16 Adafruit LED, speaker, and two NES controllers to build a two-player pong game. Interfacing NES controller communications in C using timers, waits, and interrupts.</p>
+                    <video id="example_video_1" class="video-js vjs-default-skin"
+                      controls preload="auto" width="640" height="264"
+                      poster="assets/pong.jpg"
+                      data-setup='{"example_option":true}'>
+                     <source src="assets/pong.mp4" type='video/mp4' />
+                     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+</video>
+
 					<h2>ZotPark</h2>
 					<p>With a team of five, we got 2nd place at UC Irvine Fall AppJam 2011. We designed an Android mobile application that helps students navigate the UC Irvine parking lot system. ZotPark allows users to look up valid locations to park based on their permit type. ZotPark can also determine and display extra parking lots and structures available to the user, depending on time of day. Additionally, the app provides information about parking lots and permit types, as well as navigation capabilities. "When I was new to campus, I spent 20 minutes driving up and down Peltason looking for Lot 17A and no one could help me find it," said Clark. "But this app can."</p>
 				</div>
