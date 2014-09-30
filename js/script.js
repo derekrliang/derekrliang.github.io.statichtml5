@@ -16,12 +16,15 @@ $(document).ready(function() {
 
 
   $('.fa-bars').click(function() {
+	  
 	  if ($(this).hasClass('on')) {
-		  $('.menu').removeClass('show');
+		  //$('#navbar').removeClass('show');
+		 $('#navbar').collapse('hide');
 		  $(this).removeClass('on');
 	  } else {
-		  $('.menu').addClass('show');
+		  //$('#navbar').addClass('show');
 		  $(this).addClass('on');
+		  $('#navbar').collapse('show');
 	  }
   });
   
