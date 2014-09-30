@@ -1,9 +1,13 @@
+html, body {
+	height: 100%;	
+}
+
 /**********************************
 ARTICLE
 ***********************************/
 
 article {
-	/* border-bottom: #dfdfdf 1px solid; */
+	height: 100%;
 }
 
 /**********************************
@@ -38,6 +42,10 @@ NAV-BAR-MOD-COLOR
 }
 }
 
+.navbar-toggle {
+	background-color: white;
+}
+
 /**********************************
 1: INTRO
 ***********************************/
@@ -54,10 +62,12 @@ NAV-BAR-MOD-COLOR
 	left: 0;
 	padding: 0;
 	top: 0;
+	
+	height: 100%;
 }
 
 #intro-div-overlay {
-	height: 955px;
+	height: 100%;
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
 	width: 100%;
 	
@@ -65,7 +75,7 @@ NAV-BAR-MOD-COLOR
 }
 
 #intro-div-text {
-	height: 955px;
+	height: 75%;
 	display: table;
 	position: absolute;
 	top: 0;
@@ -78,6 +88,7 @@ NAV-BAR-MOD-COLOR
 	vertical-align: middle;
 	display: table-cell;
 	width: 1900px;
+	height: 100%;
 }
 
 .spec-tabs a {
@@ -129,9 +140,6 @@ div.spec-content div {
 
 	/* Non-changing CSS3 transition elements; establishes the base transition properties */
 	position: absolute;
-	
-	/* Hide element with overflow */
-	height: 300px;
 	
 	/* Stop user text selection */
 	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
