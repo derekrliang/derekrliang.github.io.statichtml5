@@ -12,21 +12,5 @@ $(document).ready(function() {
 		  }
 		}
 	  });
-	});
-
-
-  $('.fa-bars').click(function() {
-	  
-	  if ($(this).hasClass('on')) {
-		  //$('#navbar').removeClass('show');
-		 $('#navbar').collapse('hide');
-		  $(this).removeClass('on');
-	  } else {
-		  //$('#navbar').addClass('show');
-		  $(this).addClass('on');
-		  $('#navbar').collapse('show');
-	  }
-  });
-  
-  
+	});  
 });
