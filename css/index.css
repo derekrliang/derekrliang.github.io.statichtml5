@@ -7,6 +7,38 @@ article {
 }
 
 /**********************************
+NAV-BAR-MOD-COLOR
+***********************************/
+
+.navbar-default {
+	background-color: black;
+	border: none;
+}
+
+.navbar-default .navbar-brand {
+	color: #e09e0f;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;	
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #e09e0f;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: white;
+	text-decoration: underline;	
+}
+
+@media (min-width: 768px) {
+.navbar {
+	border-radius: 0px;
+}
+}
+
+/**********************************
 1: INTRO
 ***********************************/
 #intro-div-img-bg {
