@@ -7,21 +7,4 @@ h1 {
 	font-size: 60px;
 }
 
-.spec-tabs a {
-	border-radius: 6px;
-}
-
-.dev-title:hover {
-	border: 2px solid rgba(224, 158, 15, 1);
-}
-}
-
-@media screen and (min-width: 1075px) {
-/**********************************
-HEADING & NAVI
-***********************************/
-i.fa-bars {
-	display: none;	
-}
-
 }

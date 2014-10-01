@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	$('.spec-tabs a').on('click', function(e){
 		e.preventDefault();
 		
@@ -12,4 +13,5 @@ $(document).ready(function() {
 			$('.spec-content').attr('data-tab', index);
 		}
 	});
+
 });

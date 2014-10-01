@@ -1,12 +1,4 @@
-html, body {
-    height: 100%;
-}
-
-/**********************************
-ARTICLE
-***********************************/
-
-article {
+html, body, article {
     height: 100%;
 }
 
@@ -66,7 +58,6 @@ NAV-BAR-MOD-COLOR
 #intro-div-overlay {
     height: 100%;
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
-    width: 100%;
     position: relative !important;
 }
 
@@ -118,62 +109,64 @@ NAV-BAR-MOD-COLOR
 }
 
 div.spec-content {
-    padding: 50px 0 0 0%;
 	/* Hide element with overflow */
     overflow: hidden;
 }
 
-div.spec-content div {
-	/* Centering fixed, absolute elements */
+div.spec {
+/* Centering fixed, absolute elements */
     max-width: 800px;
     left: 0;
     right: 0;
     margin: 0 auto;
-	/* */
     font-size: 24px;
+	
 	/* Non-changing CSS3 transition elements; establishes the base transition properties */
     position: absolute;
-
-    -moz-transition: 400ms ease -moz-transform;
-    -ms-transition: 400ms ease -ms-transform;
-    -o-transition: 400ms ease -o-transform;
-    -webkit-transition: 400ms ease -webkit-transform;
-    transition: 400ms ease transform;
-}
-
-.spec-content div {
-	/* Activate hardware-acceleration */
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
 	
-	/* Sends the element downward, hiding it from the user */
+	opacity: 0;
+	
+	/* Activate hardware-acceleration */
+	/*
+	moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	*/
+		
+	/* Sends the element left, off screen, hiding it from the user */
+	/*
     -moz-transform: translateX(-200%);
     -ms-transform: translateX(-200%);
     -o-transform: translateX(-200%);
     -webkit-transform: translateX(-200%);
     transform: translateX(-200%);
+		
+	-moz-transition: -moz-transform 400ms ease;
+    -ms-transition: -ms-transform 400ms ease;
+    -o-transition: -o-transform 400ms ease;
+    -webkit-transition: -webkit-transform 400ms ease;
+    transition: transform 400ms ease;
+	*/
 }
 
-.spec-content[data-tab='0'] div:nth-child(1),
-.spec-content[data-tab='2'] div:nth-child(2),
-.spec-content[data-tab='4'] div:nth-child(3) {
-	/* Activate hardware-acceleration */
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
+div.spec-content[data-tab='0'] div:nth-child(1),
+div.spec-content[data-tab='2'] div:nth-child(2),
+div.spec-content[data-tab='4'] div:nth-child(3) 
+{
+	opacity: 1;
 	
 	/* Sends the element to its natural position, revealing it */
+	/*
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     -webkit-transform: translateX(0);
     transform: translateX(0);
+	*/
 }
+
 
 @media screen and (min-width: 660px) {
     .spec-tabs a {
@@ -189,8 +182,15 @@ div.spec-content div {
         z-index: 5;
     }
 
-/* Unstack spec tab/content */
-    .spec-tabs a {
-        display: inline-block;
-    };
+	/* Unstack spec tab/content */
+		.spec-tabs a {
+			display: inline-block;
+			border-radius: 6px;
+		}
+
+	
+	.dev-title:hover {
+		border: 2px solid rgba(224, 158, 15, 1);
+	}
 }
+
