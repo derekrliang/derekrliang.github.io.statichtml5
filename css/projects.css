@@ -13,3 +13,7 @@ div.project-img img {
 	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
 }
+
+#example_video_1 {
+	max-width: 100%;	
+}
